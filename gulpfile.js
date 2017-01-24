@@ -89,7 +89,7 @@ gulp.task('serve', () => {
   runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts'], () => {
     browserSync({
       notify: false,
-      port: 9000,
+      port: 80,
       server: {
         baseDir: ['.tmp', 'app'],
         routes: {
@@ -114,7 +114,7 @@ gulp.task('serve', () => {
 gulp.task('serve:dist', () => {
   browserSync({
     notify: false,
-    port: 9000,
+    port: 80,
     server: {
       baseDir: ['dist']
     }
@@ -124,7 +124,7 @@ gulp.task('serve:dist', () => {
 gulp.task('serve:test', ['scripts'], () => {
   browserSync({
     notify: false,
-    port: 9000,
+    port: 80,
     ui: false,
     server: {
       baseDir: 'test',
