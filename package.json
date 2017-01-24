@@ -67,7 +67,7 @@
     }
   },
   "scripts": {
-    "start": "node app",
-    "postinstall": "gulp default"
+    "start": "gulp serve",
+    "postinstall": "gulp serve"
   }
 }
